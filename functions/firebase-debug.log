@@ -1,0 +1,25 @@
+[debug] [2023-11-01T10:17:16.489Z] ----------------------------------------------------------------------
+[debug] [2023-11-01T10:17:16.490Z] Command:       /Users/Lily/.nvm/versions/node/v16.13.0/bin/node /Users/Lily/.nvm/versions/node/v16.13.0/bin/firebase deploy --only functions
+[debug] [2023-11-01T10:17:16.491Z] CLI Version:   11.30.0
+[debug] [2023-11-01T10:17:16.491Z] Platform:      darwin
+[debug] [2023-11-01T10:17:16.491Z] Node Version:  v16.13.0
+[debug] [2023-11-01T10:17:16.497Z] Time:          Wed Nov 01 2023 11:17:16 GMT+0100 (Central European Standard Time)
+[debug] [2023-11-01T10:17:16.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-01T10:17:16.549Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-01T10:17:16.549Z] > authorizing via signed-in user (lisa.lou.kara@gmail.com)
+[debug] [2023-11-01T10:17:16.549Z] [iam] checking project portfolio-ba4e2 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-11-01T10:17:16.551Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-ba4e2:testIamPermissions [none]
+[debug] [2023-11-01T10:17:16.551Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-ba4e2:testIamPermissions x-goog-quota-user=projects/portfolio-ba4e2
+[debug] [2023-11-01T10:17:16.552Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-ba4e2:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-01T10:17:17.229Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-ba4e2:testIamPermissions 200
+[debug] [2023-11-01T10:17:17.230Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-ba4e2:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-11-01T10:17:17.231Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/portfolio-ba4e2/serviceAccounts/portfolio-ba4e2@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-11-01T10:17:17.231Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/portfolio-ba4e2/serviceAccounts/portfolio-ba4e2@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-11-01T10:17:17.874Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/portfolio-ba4e2/serviceAccounts/portfolio-ba4e2@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-11-01T10:17:17.874Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/portfolio-ba4e2/serviceAccounts/portfolio-ba4e2@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'portfolio-ba4e2'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
