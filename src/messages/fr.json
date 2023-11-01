@@ -1,0 +1,16 @@
+{
+  "about_me": "À PROPOS DE MOI",
+  "projects": "PROJETS",
+  "contact_me_start_new_project": "Me contacter pour commencer un nouveau projet",
+  "contact": "CONTACT",
+  "specialised_in": "Spécialisée en React/ React Native",
+  "and_in": "& Firebase",
+  "mobile": "MOBILE",
+  "web": "WEB",
+  "name": "Nom",
+  "firstname": "Prénom",
+  "email": "Email",
+  "message": "Message",
+  "phoneNumber": "Téléphone",
+  "send": "Envoyer"
+}
