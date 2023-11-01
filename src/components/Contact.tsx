@@ -25,9 +25,26 @@ export const Contact = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState<{
+    name: boolean;
+    firstName: boolean;
+    email: boolean;
+    message: boolean;
+  }>({ email: false, firstName: false, message: false, name: false });
 
   const handleSendForm = async () => {
-    console.log("sent")
+    setError({ email: false, firstName: false, message: false, name: false });
+
+    if (!email || !firstName || !message || !name) {
+      setError((prev) => ({
+        ...prev,
+        email: !email ? true : false,
+        name: !name ? true : false,
+        firstName: !firstName ? true : false,
+        message: !message ? true : false,
+      }));
+    }
+
     const sendMessage = httpsCallable(functions, 'sendEmail');
     await sendMessage({
       message,
@@ -46,24 +63,28 @@ export const Contact = () => {
 
   return (
     <div
-      className="px-[136px] flex flex-row pb-[310px] justify-center pt-[200px]"
+      className="px-[136px] flex laptop:flex-row flex-col pb-[310px] justify-center items-center laptop:items-start pt-[200px] "
       id="contact-section">
       <div>
-        <ParagraphTitle title={t('contact')} className="laptop:pb-[53px]" />
-        <p>{t('contact_me_start_new_project')}</p>
+        <ParagraphTitle
+          title={t('contact')}
+          className="laptop:pb-[53px] text-center laptop:text-left"
+        />
+        <p className="pb-[100px] laptop:pb-0">{t('contact_me_start_new_project')}</p>
       </div>
-      <div className="pl-[180px]">
+      <div className="laptop:pl-[180px]">
         <div className="flex">
-          <Input placeholder={t('name')} value={name} onChange={setName} />
+          <Input placeholder={t('name')} value={name} onChange={setName} error={error.name} />
           <Input
             placeholder={t('firstname')}
             className="ml-[80px]"
             value={firstName}
             onChange={setFirstName}
+            error={error.firstName}
           />
         </div>
         <div className="flex pt-[74px]">
-          <Input placeholder={t('email')} value={email} onChange={setEmail} />
+          <Input placeholder={t('email')} value={email} onChange={setEmail} error={error.email} />
           <Input
             placeholder={t('phoneNumber')}
             className="ml-[80px]"
@@ -76,12 +97,13 @@ export const Contact = () => {
           className="w-full mt-[74px]"
           value={message}
           onChange={setMessage}
+          error={error.message}
         />
         <div className="pt-[100px] flex justify-center">
           <button
             className="px-[60px] py-[14px] bg-white text-black text-h4 leading-10"
             onClick={handleSendForm}>
-            {t('send')}
+            <p className="laptop:text-[28px] text-body20 font-bold">{t('send')}</p>
           </button>
         </div>
       </div>
