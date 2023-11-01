@@ -27,6 +27,7 @@ export const Contact = () => {
   const [message, setMessage] = useState('');
 
   const handleSendForm = async () => {
+    console.log("sent")
     const sendMessage = httpsCallable(functions, 'sendEmail');
     await sendMessage({
       message,
