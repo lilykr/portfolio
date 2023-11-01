@@ -3,14 +3,17 @@ type Props = {
   onChange: (text: string) => void;
   placeholder: string;
   className?: string;
+  error?: boolean;
 };
 
-export const Input = ({ onChange, value, placeholder, className }: Props) => {
+export const Input = ({ onChange, value, placeholder, className, error }: Props) => {
   return (
     <div className={className}>
       <input
         placeholder={placeholder}
-        className="border-b text-white bg-black outline-none pb-[20px] placeholder:text-white"
+        className={`${
+          error ? 'border-b border-[#9C3C39]' : 'border-b'
+        } text-white bg-black outline-none pb-[20px] placeholder:text-white`}
         onChange={(event) => onChange(event.target.value)}
         value={value}
       />
