@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 
 import { Header } from '@/components/Header';
-import { MobileMenu } from '@/components/MobileMenu';
 import { Locale, i18n } from '@/i18n-config';
 
 import './globals.css';
@@ -63,10 +62,22 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${manrope.variable} ${roboto.variable}`}>
-          <Header />
-          <MobileMenu />
-          {children}
+        <body className={`${manrope.variable} ${roboto.variable} p-[10px] bg-black`}>
+          <div className="relative z-10 border h-full">
+            <Header />
+            <video
+              className="videoTag z-0 absolute w-full h-full left-0 object-fill"
+              autoPlay
+              loop
+              muted>
+              <source
+                src="https://static.videezy.com/system/resources/previews/000/000/123/original/MVI_002613.mp4"
+                type="video/mp4"
+              />
+            </video>
+            {/* <MobileMenu /> */}
+            {children}
+          </div>
         </body>
       </NextIntlClientProvider>
     </html>
