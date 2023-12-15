@@ -1,7 +1,4 @@
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-
-import me from '../../assets/images/me.svg';
 
 import { BodyText } from './atoms/BodyText';
 import { ParagraphTitle } from './atoms/ParagraphTitle';

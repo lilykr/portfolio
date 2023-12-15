@@ -18,6 +18,7 @@ type RequestData = {
   firstName: string;
 };
 
+// eslint-disable-next-line max-lines-per-function
 export const Contact = () => {
   const t = useTranslations();
   const [name, setName] = useState('');
