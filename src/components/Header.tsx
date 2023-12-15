@@ -10,27 +10,28 @@ export const Header = () => {
   const t = useTranslations();
   const params = usePathname();
   return (
-    <div className="fixed w-[98%] p-[15px] laptop:p-[36px] flex justify-between text-body11 tablet:text-body13 laptop:text-body18 z-50 bg-gradient-to-t from-black/25 via-black to-[#0A0A0A]">
+    <div className="fixed w-[98%] p-[15px] laptop:p-[36px] flex flex-col laptop:flex-row justify-between text-body13 laptop:text-body18 z-50 laptop:bg-gradient-to-t laptop:from-black/25 laptop:via-black laptop:to-[#0D0D0D]">
       <Link href="/">
-        <p>Lisa-Lou Kara </p>
+        <p className="pb-5 laptop:pb-0">Lisa-Lou Kara </p>
       </Link>
-      <div className=" w-[202px] hidden laptop:flex flex-row laptop:w-[600px] justify-between">
+      <div className=" w-[202px] laptop:flex flex-row laptop:w-[600px] justify-between">
         <TopbarItem href="/" title={t('topbar.home')} isActive={params.endsWith('/')} />
         <TopbarItem
           href="/projects"
           title={t('topbar.projects')}
           isActive={params.includes('/projects')}
         />
-
-        <Link href="/about">
-          <p>{t('topbar.about')}</p>
-        </Link>
-        <Link href="/skills">
-          <p>{t('topbar.skills')}</p>
-        </Link>
-        <Link href="contacts">
-          <p>{t('topbar.contact_me')}</p>
-        </Link>
+        <TopbarItem href="/about" title={t('topbar.about')} isActive={params.includes('/about')} />
+        <TopbarItem
+          href="/skills"
+          title={t('topbar.skills')}
+          isActive={params.includes('/skills')}
+        />
+        <TopbarItem
+          href="/contact"
+          title={t('topbar.contact_me')}
+          isActive={params.includes('/contact')}
+        />
       </div>
     </div>
   );

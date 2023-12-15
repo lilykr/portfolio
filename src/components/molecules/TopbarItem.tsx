@@ -11,7 +11,7 @@ export const TopbarItem = ({ href, title, isActive }: Props) => {
     <div className="flex flex-row items-center">
       {isActive && <div className="w-[6px] h-[6px] rounded-full bg-white" />}
       <Link href={href}>
-        <p className="pl-[10px]">{title}</p>
+        <p className="pl-[10px] hover:text-[#CACACA]">{title}</p>
       </Link>
     </div>
   );

@@ -5,7 +5,7 @@ import { BodyText } from './atoms/BodyText';
 export const Title = () => {
   const t = useTranslations();
   return (
-    <div className="flex w-full p-[15px]">
+    <div className="absolute bottom-0 flex w-full laptop:flex-row flex-col p-[15px]">
       <div className="font-manrope text-h3 tablet:text-h2 desktop:text-h1 flex flex-col justify-end">
         <p className="leading-[0.5]">Web </p>
         <p className="leading-snug">Developer</p>

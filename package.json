@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "NODE_OPTIONS=--max_old_space_size=6144 tsc --project tsconfig.json --noEmit --pretty",
-    "chk": "yarn typecheck && yarn lint"
+    "chk": "yarn typecheck && yarn lint",
+    "icons": "rm -Rf src/components/icons && npx @svgr/cli --out-dir src/components/icons --icon 24  --typescript -- icons &&  yarn eslint ./src/components/icons --fix"
+
   },
   "dependencies": {
     "@types/node": "20.6.2",

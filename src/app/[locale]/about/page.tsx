@@ -6,13 +6,13 @@ import { useTranslations } from 'next-intl';
 import { BodyText } from '@/components/atoms/BodyText';
 import { ParagraphTitle } from '@/components/atoms/ParagraphTitle';
 
-import me from '../../../../assets/images/me.svg';
+import me from '../../../../assets/images/me.png';
 
 export default function About() {
   const t = useTranslations();
   return (
     <div
-      className="relative z-10 flex flex-col items-center laptop:items-start laptop:pt-[120px] laptop:px-[90px] laptop:flex-row"
+      className="relative z-10 flex flex-col items-center laptop:items-start laptop:pt-[120px] pt-[200px] laptop:px-[90px] laptop:flex-row"
       id="about-section">
       <div className="flex flex-col items-center laptop:items-start">
         <ParagraphTitle title={t('about_me')} />

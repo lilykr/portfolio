@@ -13,7 +13,7 @@ export const Input = ({ onChange, value, placeholder, className, error }: Props)
         placeholder={placeholder}
         className={`${
           error ? 'border-b border-[#9C3C39]' : 'border-b'
-        } text-white bg-black outline-none pb-[20px] placeholder:text-white`}
+        } text-white bg-black bg-opacity-0 outline-none pb-[20px] placeholder:text-white`}
         onChange={(event) => onChange(event.target.value)}
         value={value}
       />
