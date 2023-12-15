@@ -8,10 +8,10 @@ type Props = {
 
 export const Input = ({ onChange, value, placeholder, className, error }: Props) => {
   return (
-    <div className={className}>
+    <div className={`w-full ${className}`}>
       <input
         placeholder={placeholder}
-        className={`${
+        className={`w-full ${
           error ? 'border-b border-[#9C3C39]' : 'border-b'
         } text-white bg-black bg-opacity-0 outline-none pb-[20px] placeholder:text-white`}
         onChange={(event) => onChange(event.target.value)}
