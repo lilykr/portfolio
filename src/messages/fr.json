@@ -12,5 +12,12 @@
   "email": "Email",
   "message": "Message",
   "phoneNumber": "Téléphone",
-  "send": "Envoyer"
+  "send": "Envoyer",
+  "topbar": {
+    "home":"Home",
+    "projects": "Projets",
+    "about":"À propos",
+    "skills":"Compétences",
+    "contact_me":"Me contacter"
+  }
 }

@@ -69,7 +69,8 @@ export default async function RootLayout({
               className="videoTag z-0 absolute w-full h-full left-0 object-fill"
               autoPlay
               loop
-              muted>
+              muted
+              playsInline>
               <source
                 src="https://static.videezy.com/system/resources/previews/000/000/123/original/MVI_002613.mp4"
                 type="video/mp4"
