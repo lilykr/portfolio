@@ -80,7 +80,7 @@ export default async function RootLayout({
               />
             </video> */}
             {/* <MobileMenu /> */}
-            <div className="absolute w-full h-[calc(100vh-23px)] opacity-30 border-4 border-[#FF0000]">
+            <div className="absolute w-full h-[calc(100dvh-23px)] opacity-30">
               <Image
                 alt="Black background with white strokes"
                 src={background}
