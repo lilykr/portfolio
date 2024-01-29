@@ -1,9 +1,12 @@
 import localFont from 'next/font/local';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 
 import { Header } from '@/components/Header';
 import { Locale, i18n } from '@/i18n-config';
+
+import background from '../../../assets/images/background.jpeg';
 
 import './globals.css';
 
@@ -65,7 +68,7 @@ export default async function RootLayout({
         <body className={`${manrope.variable} ${roboto.variable} p-[10px] bg-black`}>
           <div className="relative z-10 border h-full">
             <Header />
-            <video
+            {/* <video
               className="videoTag z-0 absolute w-full h-full left-0 object-fill"
               autoPlay
               loop
@@ -75,8 +78,11 @@ export default async function RootLayout({
                 src="https://static.videezy.com/system/resources/previews/000/000/123/original/MVI_002613.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
             {/* <MobileMenu /> */}
+            <div className="absolute w-full h-[calc(100vh-23px)] opacity-30 ">
+              <Image alt="picture of me" src={background} className="h-full object-cover" />
+            </div>
             {children}
           </div>
         </body>

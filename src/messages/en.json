@@ -2,5 +2,20 @@
   "about_me": "ABOUT ME",
   "projects": "PROJETS",
   "specialised_in": "Specialised in React/ React Native",
-  "and_in": "& Firebase"
+  "and_in": "& Firebase",
+  "mobile": "MOBILE",
+  "web": "WEB",
+  "name": "Lastname",
+  "firstname": "Surname",
+  "email": "Email",
+  "message": "Message",
+  "phoneNumber": "Phone",
+  "send": "Send",
+  "topbar": {
+    "home":"Home",
+    "projects": "Projets",
+    "about":"About",
+    "skills":"Skills",
+    "contact_me":"Contact me"
+  }
 }

@@ -6,9 +6,12 @@ import { ProjectItem } from './molecules/ProjectItem';
 export const Projects = () => {
   const t = useTranslations();
   return (
-    <div className="pt-[78px] w-full ">
-      <ParagraphTitle title={t('projects')} />
-      <div className="absolute top-0 right-[25px] overflow-scroll h-[calc(100vh-2rem)] pb-[30px] no-scrollbar laptop:pt-24 pt-36">
+    <div className="absolute pt-[78px] w-full">
+      <ParagraphTitle
+        title={t('projects')}
+        className="laptop:pl-[20px] text-right pr-[25px] laptop:text-left laptop:pr-0"
+      />
+      <div className="absolute top-0 right-[25px] overflow-scroll h-[calc(100vh-5rem)] pb-[30px] no-scrollbar laptop:pt-24 pt-36 z-20">
         <div className="flex flex-row items-center justify-end pb-[60px]">
           <p className="laptop:text-[32px] text-[24px] font-light font-manrope">web</p>
         </div>

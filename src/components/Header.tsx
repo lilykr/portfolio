@@ -10,11 +10,12 @@ export const Header = () => {
   const t = useTranslations();
   const params = usePathname();
   return (
-    <div className="fixed w-[98%] p-[15px] laptop:p-[36px] flex flex-col laptop:flex-row justify-between text-body13 laptop:text-body18 z-50 laptop:bg-gradient-to-t laptop:from-black/25 laptop:via-black laptop:to-[#0D0D0D]">
+    <div className="fixed w-[50px] flex tablet:w-[calc(100%-22px)] p-[15px] tablet:p-[26px] rotate-90 tablet:rotate-0 text-body13 laptop:text-body18 tablet:bg-black tablet:bg-opacity-80 z-50">
       <Link href="/">
-        <p className="pb-5 laptop:pb-0">Lisa-Lou Kara </p>
+        <p className="hidden tablet:block">Lisa-Lou Kara</p>
+        <p className="tablet:hidden w-fit h-fit -rotate-90">LLK</p>
       </Link>
-      <div className=" w-[202px] laptop:flex flex-row laptop:w-[600px] justify-between">
+      <div className="absolute top-0 tablet:top-[26px] flex tablet:justify-end tablet:w-[600px] w-max rotate-180 tablet:rotate-0 pb-[16px] tablet:pb-0 pt-[17px] tablet:pt-0 pr-12 tablet:pr-0 bg-black bg-opacity-80 tablet:bg-opacity-0 text-body11 laptop:text-body18 -z-[1] tablet:z-10">
         <TopbarItem href="/" title={t('topbar.home')} isActive={params.endsWith('/')} />
         <TopbarItem
           href="/projects"
