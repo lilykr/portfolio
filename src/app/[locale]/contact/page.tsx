@@ -65,7 +65,7 @@ export default function Contact() {
 
   return (
     <div
-      className="relative z-10 laptop:px-[136px] flex laptop:flex-row flex-col justify-center items-center laptop:items-start laptop:pt-[150px] pt-[200px]"
+      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col laptop:flex-row laptop:justify-center laptop:items-start items-center laptop:pt-[calc((100dvh)/3-50px)] pt-[calc((100dvh)/3-100px)] laptop:px-16 px-8"
       id="contact-section">
       <div>
         <ParagraphTitle
@@ -75,7 +75,7 @@ export default function Contact() {
         <p className="pb-5 w-[290px] laptop:w-fit text-center">
           {t('contact_me_start_new_project')}
         </p>
-        <div className="flex flex-row justify-center laptop:justify-start">
+        <div className="flex flex-row justify-center">
           <RSButton iconName="Linkedin" linktoRS="https://www.linkedin.com/in/lisaloukara" />
           <RSButton iconName="Malt" linktoRS="https://www.malt.fr/profile/lisaloukara" />
         </div>
@@ -111,7 +111,7 @@ export default function Contact() {
           <button
             className="laptop:px-[60px] laptop:py-[14px] px-[20px] py-[6px] bg-white text-black text-h4 leading-10"
             onClick={handleSendForm}>
-            <p className="laptop:text-[28px] text-body20 font-bold">{t('send')}</p>
+            <p className="laptop:text-[28px] text-body20 font-bold uppercase">{t('send')}</p>
           </button>
         </div>
       </div>
