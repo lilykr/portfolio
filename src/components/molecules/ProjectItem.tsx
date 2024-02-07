@@ -13,7 +13,7 @@ export const ProjectItem = ({ details, title, link }: Props) => {
         <Link
           href={link}
           target="_blank"
-          className="flex tablet:flex-row flex-col-reverse justify-end items-end font-manrope py-[10px] hover:text-[#CACACA]">
+          className="flex tablet:flex-row flex-col-reverse justify-end items-end font-manrope py-[10px] hover:text-[#CACACA] hover:cursor-pointer">
           <p className="tablet:text-body18 text-body11 text-end tablet:text-start">{details}</p>
           <p className="tablet:pl-[20px] pl-[16px] tablet:text-[60px] text-[26px] leading-none font-light">
             {title}

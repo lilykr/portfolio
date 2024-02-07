@@ -20,17 +20,24 @@ export const Projects = () => {
           title="eCodevbox"
           link="https://ecodevbox.fr/"
         />
+
         <ProjectItem
           details="2022-23/ Freelance/ NextJs & Back4App"
           title="WeWatches"
           link="https://wewatches.com/feed"
         />
+
         <ProjectItem
           details="2022/ Appstud/ NextJs & NodeJs"
           title="Paratennis"
           link="https://paratennis.fft.fr"
         />
-        <ProjectItem details="2021/ Perso/ React & NodeJs" title="Doogood" />
+
+        <ProjectItem
+          details="2021/ Perso/ React & NodeJs"
+          title="Doogood"
+          link="https://doo-good.fr/"
+        />
         <ProjectItem details="2021/ Freelance/ Gatsby" title="Fiducia" />
 
         <p className="laptop:text-[32px] text-[24px] font-light font-manrope text-right tablet:pb-[60px] pb-10 pt-[60px]">

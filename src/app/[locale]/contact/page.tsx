@@ -65,7 +65,7 @@ export default function Contact() {
 
   return (
     <div
-      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col laptop:flex-row laptop:justify-center laptop:items-start items-center laptop:pt-[calc((100dvh)/3-50px)] pt-[calc((100dvh)/3-100px)] laptop:px-16 px-8"
+      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col laptop:flex-row laptop:justify-center laptop:items-start items-center tablet:pt-[calc((100dvh)/3-50px)] pt-[calc((100dvh)/3-100px)] laptop:px-16 px-8"
       id="contact-section">
       <div>
         <ParagraphTitle
