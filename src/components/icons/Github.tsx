@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import type { SVGProps } from 'react';
 
+// eslint-disable-next-line max-lines-per-function
 const SvgGithub = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
