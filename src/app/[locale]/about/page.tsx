@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { BodyText } from '@/components/atoms/BodyText';
 import { ParagraphTitle } from '@/components/atoms/ParagraphTitle';
 
-import me from '../../../../assets/images/me-new.jpeg';
+import me from '../../../../assets/images/me-new.webp';
 
 export default function About() {
   const t = useTranslations();
