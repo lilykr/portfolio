@@ -1,6 +1,8 @@
 {
   "about_me": "ABOUT ME",
   "projects": "PROJETS",
+  "contact_me_start_new_project": "TODO",
+  "contact": "CONTACT",
   "specialised_in": "Specialised in React/ React Native",
   "and_in": "& Firebase",
   "mobile": "MOBILE",
