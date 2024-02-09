@@ -148,7 +148,7 @@ export default function Skills() {
       </div>
 
       {/* ////////  Responsive /////// */}
-      <div className="absolute flex flex-col">
+      <div className="absolute flex flex-col tablet:hidden">
         <div className="flex flex-row items-center justify-center">
           <Icon
             name="Postman"
