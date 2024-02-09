@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import { BodyText } from '@/components/atoms/BodyText';
 import { ParagraphTitle } from '@/components/atoms/ParagraphTitle';
 
-import me from '../../../../assets/images/me-bw.jpg';
+import me from '../../../../assets/images/me-new.jpeg';
 
 export default function About() {
   const t = useTranslations();
@@ -20,7 +20,7 @@ export default function About() {
           <BodyText text="“ Développeuse React fullstack freelance avec trois ans d'expérience, je me distingue par une approche agile de la programmation. Mon engagement ? Collaborer étroitement avec mes clients pour créer des produits sur mesure, alliant la puissance du développement à une interface React élégante. Si vous cherchez une professionnelle du code, passionnée et créative, prête à relever de nouveaux défis, explorons ensemble comment je peux contribuer à votre projet. Découvrez mes expériences professionnelles et projets personnels dans ce portfolio. “" />
         </div>
       </div>
-      <div className="flex items-center w-full mt-12 laptop:mt-[0px] laptop:w-[588px] laptop:h-auto">
+      <div className="flex items-center w-[50%] m-auto mt-12 laptop:mt-[0px] laptop:w-[350px] laptop:h-auto">
         <Image alt="picture of me" src={me} />
       </div>
     </div>
