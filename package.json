@@ -10,7 +10,6 @@
     "typecheck": "NODE_OPTIONS=--max_old_space_size=6144 tsc --project tsconfig.json --noEmit --pretty",
     "chk": "yarn typecheck && yarn lint",
     "icons": "rm -Rf src/components/icons && npx @svgr/cli --out-dir src/components/icons --icon 24  --typescript -- icons &&  yarn eslint ./src/components/icons --fix"
-
   },
   "dependencies": {
     "@types/node": "20.6.2",
@@ -30,6 +29,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "server-only": "^0.0.1",
+    "sharp": "^0.33.2",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
   }
