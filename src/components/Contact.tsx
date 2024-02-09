@@ -64,16 +64,16 @@ export const Contact = () => {
 
   return (
     <div
-      className="px-[136px] flex laptop:flex-row flex-col pb-[310px] justify-center items-center laptop:items-start pt-[200px] "
+      className="px-[136px] flex tablet:flex-row flex-col pb-[310px] justify-center items-center tablet:items-start pt-[200px] "
       id="contact-section">
       <div>
         <ParagraphTitle
           title={t('contact')}
-          className="laptop:pb-[53px] text-center laptop:text-left"
+          className="tablet:pb-[53px] text-center tablet:text-left"
         />
-        <p className="pb-[100px] laptop:pb-0">{t('contact_me_start_new_project')}</p>
+        <p className="pb-[100px] tablet:pb-0">{t('contact_me_start_new_project')}</p>
       </div>
-      <div className="laptop:pl-[180px]">
+      <div className="tablet:pl-[180px]">
         <div className="flex">
           <Input placeholder={t('name')} value={name} onChange={setName} error={error.name} />
           <Input
@@ -104,7 +104,7 @@ export const Contact = () => {
           <button
             className="px-[60px] py-[14px] bg-white text-black text-h4 leading-10"
             onClick={handleSendForm}>
-            <p className="laptop:text-[28px] text-body20 font-bold">{t('send')}</p>
+            <p className="tablet:text-[28px] text-body20 font-bold">{t('send')}</p>
           </button>
         </div>
       </div>

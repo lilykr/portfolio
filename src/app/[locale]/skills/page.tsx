@@ -8,7 +8,7 @@ import { Icon } from '@/components/atoms/Icon';
 export default function Skills() {
   const [showAllSkills, setShowAllSkills] = useState(false);
   return (
-    <div className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row justify-center items-center laptop:pt-[calc((100dvh)/3-150px)] pt-0 laptop:px-16 px-8">
+    <div className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row justify-center items-center tablet:pt-[calc((100dvh)/3-150px)] pt-0 tablet:px-16 px-8">
       {/* <div className="flex flex-row justify-evenly items-center h-7 m-3 backdrop-blur-sm hover:backdrop-invert"> */}
 
       {/* Start first column */}

@@ -65,14 +65,14 @@ export default function Contact() {
 
   return (
     <div
-      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col laptop:flex-row laptop:justify-center laptop:items-start items-center tablet:pt-[calc((100dvh)/3-50px)] pt-[calc((100dvh)/3-100px)] laptop:px-16 px-8"
+      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row tablet:justify-center tablet:items-start items-center tablet:pt-[calc((100dvh)/5)] pt-[calc((100dvh)/14)] tablet:px-16 px-8"
       id="contact-section">
       <div>
         <ParagraphTitle
           title={t('contact')}
-          className="laptop:pb-[53px] text-center laptop:text-left"
+          className="tablet:pb-[53px] text-center tablet:text-left"
         />
-        <p className="pb-5 w-[290px] laptop:w-fit text-center">
+        <p className="pb-5 w-[290px] tablet:w-fit text-center">
           {t('contact_me_start_new_project')}
         </p>
         <div className="flex flex-row justify-center">
@@ -80,38 +80,38 @@ export default function Contact() {
           <RSButton iconName="Malt" linktoRS="https://www.malt.fr/profile/lisaloukara" />
         </div>
       </div>
-      <div className="laptop:pl-[180px] w-full px-8">
-        <div className="flex laptop:flex-row flex-col items-center mt-10 w-full">
+      <div className="tablet:pl-[180px] w-full px-8">
+        <div className="flex tablet:flex-row flex-col items-center mt-10 w-full">
           <Input placeholder={t('name')} value={name} onChange={setName} error={error.name} />
           <Input
             placeholder={t('firstname')}
-            className="laptop:ml-[80px] mt-5 laptop:mt-0"
+            className="tablet:ml-[80px] mt-5 tablet:mt-0"
             value={firstName}
             onChange={setFirstName}
             error={error.firstName}
           />
         </div>
-        <div className="flex laptop:pt-[74px] laptop:flex-row flex-col items-center mt-5">
+        <div className="flex tablet:pt-[74px] tablet:flex-row flex-col items-center mt-5">
           <Input placeholder={t('email')} value={email} onChange={setEmail} error={error.email} />
           <Input
             placeholder={t('phoneNumber')}
-            className="laptop:ml-[80px] mt-5 laptop:mt-0"
+            className="tablet:ml-[80px] mt-5 tablet:mt-0"
             value={phone}
             onChange={setPhone}
           />
         </div>
         <TextAreaInput
           placeholder={t('message')}
-          className="w-full laptop:mt-[74px] mt-5"
+          className="w-full tablet:mt-[74px] mt-5"
           value={message}
           onChange={setMessage}
           error={error.message}
         />
-        <div className="laptop:pt-[60px] mt-5 flex justify-center">
+        <div className="tablet:pt-[60px] mt-5 flex justify-center">
           <button
-            className="laptop:px-[60px] laptop:py-[14px] px-[20px] py-[6px] bg-white text-black text-h4 leading-10"
+            className="tablet:px-[60px] tablet:py-[14px] px-[20px] py-[6px] bg-white text-black text-h4 leading-10"
             onClick={handleSendForm}>
-            <p className="laptop:text-[28px] text-body20 font-bold uppercase">{t('send')}</p>
+            <p className="tablet:text-[28px] text-body20 font-bold uppercase">{t('send')}</p>
           </button>
         </div>
       </div>

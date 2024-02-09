@@ -13,7 +13,7 @@ export const Projects = () => {
       />
       <div className="absolute top-0 right-[25px] overflow-scroll h-[calc(100vh-5rem)] pb-[30px] no-scrollbar tablet:pt-24 pt-16 z-20">
         <div className="flex flex-row items-center justify-end tablet:pb-[60px] pb-10">
-          <p className="laptop:text-[32px] text-[24px] font-light font-manrope">web</p>
+          <p className="tablet:text-[32px] text-[24px] font-light font-manrope">web</p>
         </div>
         <ProjectItem
           details="2023/ Freelance/ NextJs & Firebase"
@@ -40,7 +40,7 @@ export const Projects = () => {
         />
         <ProjectItem details="2021/ Freelance/ Gatsby" title="Fiducia" />
 
-        <p className="laptop:text-[32px] text-[24px] font-light font-manrope text-right tablet:pb-[60px] pb-10 pt-[60px]">
+        <p className="tablet:text-[32px] text-[24px] font-light font-manrope text-right tablet:pb-[60px] pb-10 pt-[60px]">
           mobile
         </p>
         <ProjectItem details="2022-23/ Projet perso/ React Native & Firebase" title="Bobo" />
