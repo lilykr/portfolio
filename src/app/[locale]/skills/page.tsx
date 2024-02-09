@@ -44,7 +44,7 @@ export default function Skills() {
             showAllSkills ? 'transform translate-y-[-140%] transition-transform duration-500' : ''
           }
           `}>
-          <Icon name="Nextjs" size={60} className="mx-3 border" />
+          <Icon name="Nextjs" size={60} className="mx-3" />
           <Icon name="Typescript" size={60} className="mx-3" />
         </div>
         <div
@@ -177,9 +177,7 @@ export default function Skills() {
             name="VsCode"
             size={60}
             className={
-              showAllSkills
-                ? 'border mx-5 transition-opacity duration-500 ease-in-out'
-                : 'opacity-0'
+              showAllSkills ? ' mx-5 transition-opacity duration-500 ease-in-out' : 'opacity-0'
             }
           />
         </div>
