@@ -1,5 +1,6 @@
 /* eslint-disable max-lines */
 'use client';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 import { Icon } from '@/components/atoms/Icon';
@@ -7,6 +8,7 @@ import { Icon } from '@/components/atoms/Icon';
 // eslint-disable-next-line max-lines-per-function, sonarjs/cognitive-complexity
 export default function Skills() {
   const [showAllSkills, setShowAllSkills] = useState(false);
+  const t = useTranslations();
   return (
     <div className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row justify-center items-center tablet:pt-[calc((100dvh)/3-150px)] pt-0 tablet:px-16 px-8">
       {/* <div className="flex flex-row justify-evenly items-center h-7 m-3 backdrop-blur-sm hover:backdrop-invert"> */}
@@ -109,7 +111,7 @@ export default function Skills() {
           showAllSkills ? 'opacity-0' : 'transition-opacity duration-800 ease-in-out'
         }`}
         onClick={() => setShowAllSkills(true)}>
-        dévoile +
+        {t('show_more')}
       </button>
 
       <div className="absolute left-[calc(100dvw/2-200px)] top-[calc(100dvh/2-200px)] tablet:flex flex-col hidden">
