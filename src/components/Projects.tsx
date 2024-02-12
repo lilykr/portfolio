@@ -6,7 +6,7 @@ import { ProjectItem } from './molecules/ProjectItem';
 export const Projects = () => {
   const t = useTranslations();
   return (
-    <div className="absolute tablet:pt-[78px] w-full">
+    <div className="fixed tablet:pt-[78px] w-full">
       <ParagraphTitle
         title={t('projects')}
         className="absolute tablet:block tablet:pl-[20px] p-2 ml-16 text-left tablet:bg-none bg-black tablet:bg-opacity-0 bg-opacity-80 w-fit z-30"
