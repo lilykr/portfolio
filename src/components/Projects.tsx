@@ -11,7 +11,7 @@ export const Projects = () => {
         title={t('projects')}
         className="absolute tablet:block tablet:pl-[20px] p-2 ml-16 text-left tablet:bg-none bg-black tablet:bg-opacity-0 bg-opacity-80 w-fit z-30"
       />
-      <div className="fixed top-0 right-[25px] overflow-scroll h-[calc(100dvh-2rem)] pb-[30px] no-scrollbar tablet:pt-24 pt-16">
+      <div className="fixed top-0 right-[25px] overflow-scroll h-[calc(100dvh)] pb-[30px] no-scrollbar tablet:pt-24 pt-16">
         <div className="flex flex-row items-center justify-end tablet:pb-[60px] pb-10">
           <p className="tablet:text-[32px] text-[24px] font-light font-manrope">web</p>
         </div>
