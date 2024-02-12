@@ -46,7 +46,12 @@ module.exports = {
       ],
       title80: ['80px'],
       title60: ['60px'],
-
+      body24: [
+        '24px',
+        {
+          fontWeight: '400',
+        },
+      ],
       body20: [
         '20px',
         {
