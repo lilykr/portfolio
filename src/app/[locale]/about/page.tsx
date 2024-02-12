@@ -12,7 +12,7 @@ export default function About() {
   const t = useTranslations();
   return (
     <div
-      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row justify-center items-center tablet:px-32 tablet:ml-0 ml-[30px] pt-9"
+      className="relative z-10 h-[calc(100dvh-23px)] flex flex-col tablet:flex-row justify-center items-center tablet:px-32 tablet:ml-0 ml-[30px] pt-10"
       id="about-section">
       <div className="flex flex-col items-center tablet:items-start">
         <ParagraphTitle title={t('about_me')} className="max-w-sm" />
