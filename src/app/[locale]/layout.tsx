@@ -65,8 +65,8 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body className={`${manrope.variable} ${roboto.variable} p-[10px] bg-black`}>
-          <div className="relative z-10 border h-full">
+        <body className={`${manrope.variable} ${roboto.variable} p-[10px]`}>
+          <div className="relative z-40 border h-full">
             <Header />
             {/* <video
               className="videoTag z-0 absolute w-full h-full left-0 object-fill"
