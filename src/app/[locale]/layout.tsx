@@ -89,6 +89,7 @@ export default async function RootLayout({
             </div>
             {children}
           </div>
+          <div className="fixed h-full w-full top-0 left-0 border-[10px] border-black border-opacity-60 z-50 pointer-events-none" />
         </body>
       </NextIntlClientProvider>
     </html>
