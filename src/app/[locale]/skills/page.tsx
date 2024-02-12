@@ -104,15 +104,15 @@ export default function Skills() {
         </div>
       </div>
 
-      <p
-        className={`absolute z-50 tablet:text-h3 text-body20 hover:text-[#CACACA] hover:cursor-pointer text-center ${
+      <button
+        className={`absolute z-50 px-[60px] py-[14px] bg-white text-black leading-10 tablet:text-[28px] text-body20  hover:cursor-pointer text-center ${
           showAllSkills ? 'opacity-0' : 'transition-opacity duration-800 ease-in-out'
         }`}
         onClick={() => setShowAllSkills(true)}>
         dévoile +
-      </p>
+      </button>
 
-      <div className="absolute left-[calc(100dvw/2-200px)]  top-[calc(100dvh/2-200px)] tablet:flex flex-col hidden">
+      <div className="absolute left-[calc(100dvw/2-200px)] top-[calc(100dvh/2-200px)] tablet:flex flex-col hidden">
         <div className="flex flex-row items-center justify-center">
           <Icon
             name="Jest"
