@@ -59,35 +59,38 @@ export const ProjectPage = ({
         className="absolute tablet:block hidden top-24 right-52"
       />
 
-      <ParagraphTitle className="text-center" title={projectTitle} />
-
       <div className="flex flex-col items-center">
-        {websiteLink && (
-          <Link
-            href={websiteLink}
-            target="_blank"
-            className="hover:text-[#CACACA] hover:cursor-pointer">
-            Consulter le site
-          </Link>
-        )}
-        {altImageLaptop && imageSrcLaptop ? (
-          <Image
-            alt={altImageLaptop}
-            src={imageSrcLaptop}
-            width={150}
-            className="tablet:hidden block py-3"
-          />
-        ) : (
-          altImagePhone2 &&
-          imageSrcPhone2 && (
+        <div className="flex flex-row items-center">
+          {altImageLaptop && imageSrcLaptop ? (
             <Image
-              alt={altImagePhone2}
-              src={imageSrcPhone2}
-              width={100}
-              className="tablet:hidden block py-3"
+              alt={altImageLaptop}
+              src={imageSrcLaptop}
+              width={150}
+              className="tablet:hidden block py-3 px-2"
             />
-          )
-        )}
+          ) : (
+            altImagePhone2 &&
+            imageSrcPhone2 && (
+              <Image
+                alt={altImagePhone2}
+                src={imageSrcPhone2}
+                width={100}
+                className="tablet:hidden block py-3 px-2"
+              />
+            )
+          )}
+          <div className="flex flex-col items-center">
+            <ParagraphTitle className="text-center" title={projectTitle} />
+            {websiteLink && (
+              <Link
+                href={websiteLink}
+                target="_blank"
+                className="hover:text-[#CACACA] hover:cursor-pointer">
+                Consulter le site
+              </Link>
+            )}
+          </div>
+        </div>
 
         <div className="tablet:pt-20 tablet:w-3/6 w-full text-center">
           <p className="tablet:text-body24">{projectDetails}</p>
