@@ -107,7 +107,7 @@ export default function Skills() {
       </div>
 
       <button
-        className={`absolute z-50 tablet:px-[60px] px-[30px] tablet:py-[14px] py-[7px] bg-white text-black leading-10 tablet:text-[28px] text-body20  hover:cursor-pointer text-center ${
+        className={`absolute z-50 tablet:px-[60px] px-[30px] tablet:py-[14px] py-[7px] bg-transparent text-white border-2 leading-10 tablet:text-[28px] text-body20  hover:cursor-pointer text-center ${
           showAllSkills ? 'opacity-0' : 'transition-opacity duration-800 ease-in-out'
         }`}
         onClick={() => setShowAllSkills(true)}>

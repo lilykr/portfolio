@@ -1,5 +1,5 @@
-type Props = { text: string };
+type Props = { text: string; className?: string };
 
-export const BodyText = ({ text }: Props) => {
-  return <p className="tablet:text-body24">{text}</p>;
+export const BodyText = ({ text, className }: Props) => {
+  return <p className={`laptop:text-body20 ${className}`}>{text}</p>;
 };

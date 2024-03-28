@@ -109,7 +109,7 @@ export default function Contact() {
         />
         <div className="tablet:pt-[60px] mt-5 flex justify-center">
           <button
-            className="tablet:px-[60px] tablet:py-[14px] px-[20px] py-[6px] bg-white text-black text-h4 leading-10"
+            className="tablet:px-[60px] tablet:py-[14px] px-[20px] py-[6px] bg-transparent text-white border-2 text-h4 leading-10"
             onClick={handleSendForm}>
             <p className="tablet:text-[28px] text-body20 font-bold uppercase">{t('send')}</p>
           </button>

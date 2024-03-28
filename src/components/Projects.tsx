@@ -48,7 +48,12 @@ export const Projects = () => {
           title="Bobo"
           link="/projects/bobo"
         />
-        <ProjectItem details="2021/ La Forge/ Front React Native" title="Low Impact" />
+        {/* <ProjectItem
+          details="2022-23/ Freelance/ React Native"
+          title="Shares"
+          link="/projects/shares"
+        /> */}
+        <ProjectItem details="2021/ Freelance/ Front React Native" title="Low Impact" />
       </div>
     </div>
   );
